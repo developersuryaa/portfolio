@@ -11,6 +11,7 @@
         --bg-color: #000000;
         --inter-font: "Inter", sans-serif;
         --anton-font: "Anton", sans-serif;
+        --f-size-vsm: 0.70rem;
         --f-size-sm: 0.80rem;
         --f-size-md: 1.1rem;
         --mrgn-top: 1.4rem;
@@ -134,4 +135,45 @@ span {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     box-shadow: 0 5px 45px -10px var(--primary-color);
+}
+
+.skills {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+    text-align: center;
+    font-family: var(--inter-font);
+    text-align: left;
+}
+
+.skills .s-leftside {
+    width: 30%
+}
+
+.skills .s-leftside h5 {
+    letter-spacing: var(--letter-s);
+    color: var(--grey-color);
+    font-weight: var(--semi-bold-fw);
+    font-size: var(--f-size-vsm);
+}
+
+.skills .s-leftside h1 {
+    color: var(--secondary-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-top: 0.8rem;
+    letter-spacing: var(--letter-s);
+}
+
+.skills .s-leftside p {
+    color: var(--grey-color);
+    font-weight: var(--semi-bold-fw);
+}
+
+.skills .s-rightside {
+    width: 70%;
 }
