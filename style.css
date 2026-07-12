@@ -24,6 +24,10 @@
   color: black;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -53,7 +57,7 @@ html, body {
     text-decoration: none;
     color: white;
     font-family: var(--inter-font);
-    letter-spacing: .1rem;
+    letter-spacing: var(--letter-s);
     font-size: 1.1em;
     font-weight: 600;
 }   
@@ -90,7 +94,7 @@ html, body {
 }
 
 .home {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +142,7 @@ span {
 }
 
 .skills {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,12 +165,12 @@ span {
 
 .skills .s-leftside h1 {
     color: var(--secondary-color);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--anton-font);
     font-size: 7rem;
     font-weight: 900;
-    line-height: 1;
+    line-height: 0.95;
     margin-top: 0.8rem;
-    letter-spacing: var(--letter-s);
+    letter-spacing: 0.6rem;
 }
 
 .skills .s-leftside p {
@@ -175,5 +179,72 @@ span {
 }
 
 .skills .s-rightside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
     width: 70%;
+    gap: 1rem;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+   border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    height: 30vh;
+    cursor: default;
+    filter: contrast(1.010);
+    padding: 1rem 1rem;
+}
+
+.skill-card img {
+    width: 6vw;
+    margin-bottom: 0rem;
+}
+
+.html-card {
+    background: radial-gradient(circle at 100% 0%, rgba(227, 76, 38, 0.2), transparent 50%), #111;
+}
+
+.css-card {
+    background: radial-gradient(circle at 100% 0%, rgba(38, 77, 228, 0.2), transparent 50%), #111;
+}
+
+.js-card {
+    background: radial-gradient(circle at 100% 0%, rgba(247, 223, 30, 0.2), transparent 50%), #111;
+}
+
+.github-card {
+    background: radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.15), transparent 60%), #111;
+}
+
+.figma-card {
+    background: radial-gradient(circle at 100% 0%, rgba(255, 114, 94, 0.25), transparent 60%), #111;
+}
+
+.photoshop-card {
+    background: radial-gradient(circle at 100% 0%, rgba(48, 201, 235, 0.25), transparent 60%), #111;
+}
+
+.skill-card:hover {
+    border: 1px solid rgba(255, 255, 255, 0.143);
+    filter: contrast(1);
+}
+
+.skill-card p {
+    color: var(--grey-color);
+    font-size: var(--f-size-vsm);
+    letter-spacing: var(--letter-s);
+    margin-top: 1rem;
+}
+
+.skill-card h3 {
+    font-family: var(--anton-font);
+    color: white;
+    letter-spacing: 0.15rem;
+    font-size: 1.7rem;
+    font-weight: 100;
 }
