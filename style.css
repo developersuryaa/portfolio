@@ -392,14 +392,14 @@ span {
   z-index: -1;             
   transform: scaleX(0);    
   transform-origin: left;  
-  transition: transform 0.4tas ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .line:hover::before {
   transform: scaleX(1);  
 }
 .line:hover {
-  color: black;            /* Change to your desired text hover color */
+  color: black;          
 }
 
 
