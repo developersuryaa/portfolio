@@ -40,8 +40,9 @@ html, body {
 .main {
     width: 100%;
     height: 100%;
-    padding: 2rem 5rem;
+    padding: 2vh 5vw;
 }
+
 
 .main .nav {
     display: flex;
@@ -261,13 +262,16 @@ span {
     flex-direction: column;
     padding: 6rem 0;
     font-family: var(--inter-font);
+    
 }
+
+
 
 .services h5 {
     color: var(--grey-color);
     font-size: var(--f-size-vsm);
     letter-spacing: var(--letter-s);
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 .services h1 {
@@ -296,12 +300,12 @@ span {
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    height: 30vh;
+    height: 25vh;
     cursor: default;
     filter: contrast(1.010);
     padding: 1rem 1rem;
     /* background: radial-gradient(circle at 100% 0%, rgba(48, 201, 235, 0.25), transparent 60%), #111; */
-    background-image: url("https://imgs.search.brave.com/b8txyfsSOiNukaNZwhfJM1XCPMbLmV8w5xWKmK6EbKo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzg2L2Nl/L2FiLzg2Y2VhYmMz/NWJkMjAyYTg4MWJl/N2Y4ZTBiNDg5OTdi/LmpwZw");
+    background-image: url("https://plus.unsplash.com/premium_photo-1675034047900-e47619908f24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -323,4 +327,120 @@ span {
     color: var(--grey-color);
     font-size: var(--f-size-md);
     margin-top: 1rem;
+}
+
+.projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 6rem 0;
+}
+
+.projects h5 {
+    color: var(--grey-color);
+    font-size: var(--f-size-vsm);
+    letter-spacing: var(--letter-s);
+    font-family: var(--inter-font)
+}
+
+.projects .selected-projects {
+    width: 100%;
+    color: var(--secondary-color);
+    font-family: var(--anton-font);
+    font-size: var(--fs-ant);
+    font-weight: var(--fw-ant);
+    line-height: 0.95;
+    margin-top: 0.8rem;
+    letter-spacing: var(--ls-ant);
+}
+
+.projects-showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.line {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.8rem;
+    width: 100%; 
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    transition: color  .3s;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;             
+  transform: scaleX(0);    
+  transform-origin: left;  
+  transition: transform 0.4tas ease-in-out;
+}
+
+.line:hover::before {
+  transform: scaleX(1);  
+}
+.line:hover {
+  color: black;            /* Change to your desired text hover color */
+}
+
+
+
+
+
+.line h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: relative;
+    z-index: 1000;
+    mix-blend-mode: difference;
+    transition: all linear .2s;
+}
+
+.line img {
+    width: 250px;
+    margin-left: 1rem;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    height: 250px;
+}
+
+.line i {
+    color: white;
+    display: relative;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+
+.line h5 {
+    color: white;
+    mix-blend-mode: difference;
+    font-size: 1.5rem;
+}
+
+.line .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,7 +1,7 @@
 const lenis = new Lenis({
-    duration: 1.5,      // Scroll kitni der tak slide hoga (itna kaafi hai)
-    lerp: 0.1,          // Smoothness level (0.1 matlab bohot smooth)
-    wheelMultiplier: 1, // Mouse speed
+    duration: 1.5,      
+    lerp: 0.1,          
+    wheelMultiplier: 1, 
     infinite: false,
   });
 
@@ -11,3 +11,18 @@ const lenis = new Lenis({
   }
 
   requestAnimationFrame(raf);
+
+// let line = document.querySelectorAll(".line");
+
+
+// line.forEach(function(val) {
+//   val.addEventListener("mouseenter", function() {
+//     val.childNodes[3].style.opacity = 1;
+//   })
+//   val.addEventListener("mouseleave", function() {
+//     val.childNodes[3].style.opacity = 0;
+//   })
+//   val.addEventListener("mousemove", function(dets) {
+//     val.childNodes[3].style.left = dets.x+"px";
+//   })
+// })
