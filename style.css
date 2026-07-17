@@ -401,11 +401,6 @@ span {
 .line:hover {
   color: black;          
 }
-
-
-
-
-
 .line h1 {
     color: white;
     font-size: 3rem;
@@ -444,3 +439,45 @@ span {
     align-items: center;
     justify-content: center;
 }
+
+.contact {
+    width: 100%;
+    /* height: auto; */
+    padding: 6rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.contact h1 {
+    font-size: 8.5rem;
+    color: white;
+    font-family: var(--anton-font);
+    letter-spacing: var(--letter-s);
+    font-weight: 900;
+    cursor: default;
+    transition: linear .3s color;
+    line-height: 8.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-handles {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.8rem;
+}
+
+.social-handles a {
+    text-decoration: none;
+    font-size: 5rem;
+    color: white;
+    transition: all .3s ease-in-out ;
+}
+
+.social-handles a:hover {
+    color: var(--primary-color);
+    transform: translateY(-5%);
+}
+
